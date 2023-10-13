@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #2f1893;
+  --twitter-color: #1da1f2;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #fff;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#box {
+  padding: 80px 130px;
+}
+
+.dflex {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  justify-content: space-between;
+}
+
+header div .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header nav {
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+header nav .purchaseBtn {
+  background-color: #e93a7d;
+  margin-left: 20px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section > div {
+  width: 50%;
+}
+
+section .leftSide {
+  padding: 0 30px 0 0;
+}
+
+section .leftSide h4 {
+  font-size: 58px;
+}
+
+section .leftSide p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+section .leftSide .learnMoreBtn {
+  background-color: #e93a7d;
+  margin-top: 15px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section .rightSide {
+  /* display: block; */
+  border-radius: 10px;
+}
+
+section .rightSide {
+  background-color: #fff;
+  padding: 30px;
+}
+
+section .rightSide .signUpText {
+  color: #1e0e62;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section .rightSide .input {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 30px;
+
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+section .rightSide .cardTerms {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section .rightSide .cardTerms input[type="checkbox"] {
+  accent-color: #25dac5;
+}
+
+section .rightSide .cardTerms span {
+  margin: 5px;
+  font-size: 13px;
+  color: #151439;
+  cursor: pointer;
+}
+
+section .rightSide .signInBtn {
+  background-color: #482be7;
+  width: 90%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section .rightSide .sep {
+  border: 1px solid #ddd;
+  position: relative;
+  margin: 35px 20px;
+}
+
+section .rightSide .or {
+  position: absolute;
+  width: 30px;
+  left: 50%;
+  background-color: #fff;
+  color: #ddd;
+  text-align: center;
+  margin: -10px 0 0 -25px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+section .rightSide .twitterBtn {
+  background-color: var(--twitter-color);
+  width: 90%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+section .rightSide p:last-child {
+  margin-top: 20px;
+  color: #151439;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+section .rightSide p:last-child span {
+  color: #25dac5;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+  #box {
+    padding: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #box {
+    padding: 30px 10px 30px 10px;
+  }
+
+  header div .logo {
+    font-size: 30px;
+  }
+
+  section .leftSide h4 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header div .logo {
+    font-size: 20px;
+  }
+
+  header nav a {
+    font-size: 12px;
+  }
+
+  header nav .purchaseBtn {
+    /* margin-left: 20px; */
+    padding: 10px;
+
+    font-size: 10px;
+  }
+
+  section {
+    flex-direction: column !important;
+  }
+
+  section > div {
+    width: 100%;
+  }
+
+  section .rightSide {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  #childrenRightSide {
+    padding: 20px 30px;
+  }
+
+  section .rightSide .input {
+    width: 80%;
+  }
+}
