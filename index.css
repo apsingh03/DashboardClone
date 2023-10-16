@@ -16,7 +16,7 @@ body {
 }
 
 #box {
-  padding: 80px 130px;
+  padding: 65px 130px;
 }
 
 .dflex {
@@ -31,7 +31,7 @@ header {
 header div .logo {
   text-decoration: none;
   color: #fff;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -45,7 +45,12 @@ header nav a {
   font-size: 18px;
   font-weight: 500;
   font-family: sans-serif;
-  padding-left: 20px;
+  padding-left: 50px;
+  height: 26px;
+}
+
+header nav a:first-child {
+  opacity: 0.6;
 }
 
 header nav .purchaseBtn {
@@ -54,10 +59,12 @@ header nav .purchaseBtn {
   padding: 10px;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 100px;
   font-size: 15px;
   font-weight: 600;
+  height: 40px;
   cursor: pointer;
+  width: 120px;
 }
 
 section {
@@ -74,13 +81,15 @@ section .leftSide {
 
 section .leftSide h4 {
   font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
 }
 
 section .leftSide p {
   margin-top: 20px;
-  font-size: 20px;
-  line-height: 2;
-  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
 }
 
 section .leftSide .learnMoreBtn {
@@ -89,10 +98,11 @@ section .leftSide .learnMoreBtn {
   padding: 10px;
   color: #fff;
   border: none;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
+  line-height: 26px;
 }
 
 section .rightSide {
@@ -107,93 +117,100 @@ section .rightSide {
 
 section .rightSide .signUpText {
   color: #1e0e62;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 52px;
 }
 
 section .rightSide .input {
-  border: 1px solid #ddd;
+  border: 2px solid #ebeaed;
   padding: 15px;
-  border-radius: 30px;
-
-  margin-bottom: 20px;
+  border-radius: 100px;
+  margin-bottom: 15px;
   width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
 }
 
 section .rightSide .cardTerms {
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 section .rightSide .cardTerms input[type="checkbox"] {
   accent-color: #25dac5;
+  width: 24px;
+  height: 24px;
 }
 
 section .rightSide .cardTerms span {
-  margin: 5px;
-  font-size: 13px;
+  font-size: 16px;
   color: #151439;
   cursor: pointer;
+  font-weight: 400;
+  line-height: 26px;
+  vertical-align: top;
+  opacity: 0.9;
+  margin: 0 0 0 5px;
 }
 
 section .rightSide .signInBtn {
   background-color: #482be7;
-  width: 90%;
-  padding: 10px;
+  width: 98%;
+  padding: 10px 0;
   color: #fff;
   border: none;
-  border-radius: 30px;
-  font-size: 15px;
-  font-weight: 600;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
+  line-height: 26px;
 }
 
 section .rightSide .sep {
-  border: 1px solid #ddd;
+  border: 1.5px solid #ebeaed;
   position: relative;
   margin: 35px 20px;
 }
 
 section .rightSide .or {
   position: absolute;
-  width: 30px;
+  width: 50px;
   left: 50%;
   background-color: #fff;
   color: #ddd;
   text-align: center;
   margin: -10px 0 0 -25px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
 }
 
 section .rightSide .twitterBtn {
   background-color: var(--twitter-color);
-  width: 90%;
-  padding: 10px;
+  width: 98%;
+  padding: 10px 0;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
+  line-height: 26px;
 }
 
 section .rightSide p:last-child {
   margin-top: 20px;
   color: #151439;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
 }
 
 section .rightSide p:last-child span {
   color: #25dac5;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -227,12 +244,13 @@ section .rightSide p:last-child span {
 
   header nav a {
     font-size: 12px;
+    padding-left: 10px;
   }
 
-  header nav .purchaseBtn {
-    /* margin-left: 20px; */
-    padding: 10px;
+  
 
+  header nav .purchaseBtn {
+    padding: 10px;
     font-size: 10px;
   }
 
