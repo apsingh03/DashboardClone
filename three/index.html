@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+      
+        #main {
+          height: 1000px;
+          width: 1000px;
+          background: #F3F4F6;
+          padding: 10px
+        }
+      
+      
+        #main .left {
+          width: 242px;
+          height: 981px;
+          padding: 0px, 0px, 540px, 0px;
+          border-radius: 6px;
+          background: #334155;
+      
+        }
+      
+        #main .right {
+          width: 726px;
+          height: 913px;
+          padding: 0 20px;
+           /* background-color: green; */
+        }
+      
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+      
+        .dflex {
+          display: flex;
+          flex-direction: row;
+        }
+      
+        .left .logo {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #14B8A6;
+          border-bottom: 0.5px solid black;
+           height: 81px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0px 20px;
+        }
+      
+        .left .logo {
+         
+        }
+      
+        .left .logo svg {
+          width: 24px;
+          height: 24px;
+          color: #14B8A6;
+        }
+      
+        .left .logo h1 {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+      
+        }
+      
+        .left nav>.list {
+          margin-top: 21px;
+          display: flex;
+          flex-direction: row;
+           /* align-items: center; */
+          color: #FFFFFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      
+        .left nav>.list:nth-child(3) {
+          background: #10B981;
+        }
+      
+        .left nav>.list div {
+          padding: 0px 20px 30px 20px;
+      
+        }
+      
+      
+        .left nav>.list svg {
+          width: 20px;
+          height: 20px;
+          color: #ffff;
+        }
+      
+        /* right SIde Header   */
+        .right header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 10px;
+          background: #fff;
+        }
+      
+        .right header input {
+          background-color: #f3f4f6;
+          border-radius: 20px;
+        }
+      
+        .right header div:nth-child(3)>div:first-child {
+          background: #000000;
+          color: #fff;
+          border-radius: 15px;
+          padding: 5px 20px;
+        }
+      
+        .right header div:nth-child(3)>div:last-child {
+          background: #FFFFFF;
+          color: #000;
+          border-radius: 10px;
+          padding: 10px 10px 0px 10px;
+        }
+      
+        .right .secondContainer {
+          height: 510px;
+          margin-top: 47px;
+          background: #171717;
+          color: #fff;
+          padding: 20px 0 30px 15px;
+          border-radius: 15px;
+        }
+      
+        .right .secondContainer .first {
+           /* padding: 30px 10px; */
+          border-radius: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      
+        .right .secondContainer .first .leftBox {
+          margin: 0 20px 0 0;
+        }
+      
+        .right .secondContainer .first .leftBox h2 {
+          font-family: Inter;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+      
+        }
+      
+        .right .secondContainer .first .leftBox p {
+          margin-top: 20px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #E5E7EB;
+          margin-bottom: 45px;
+        }
+      
+      
+        .right .secondContainer .first .rightBox button {
+          margin-top: 20px;
+          background: #059669;
+          padding: 5px;
+          margin-right: 15px;
+          border-radius: 5px;
+        }
+      
+        .right .secondContainer .second #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+      
+      
+        .right .secondContainer .second #customers td,
+        #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+          height: 53px;
+        }
+      
+      
+        .right .secondContainer .second #customers tr:nth-child(even) {
+          background-color: #f9fafb;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+      
+        }
+      
+      
+        .right .secondContainer .second #customers tr td input {
+          accent-color: #0075FF;
+        }
+      
+      
+      
+      
+        .right .secondContainer .second #customers tr:nth-child(odd) {
+          background-color: #fff;
+        }
+      
+        .right .secondContainer .second #customers tr:hover {
+          background-color: #ddd;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #111827;
+      
+        }
+      
+        .right .secondContainer .second #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #334155;
+          color: white;
+          height: 48.5px;
+        }
+      
+        .right .thirdContainer {
+          margin-top: 34px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: 280px;
+        }
+      
+        .right .thirdContainer .thirdContainer-left {
+          box-shadow: 0px 25px 50px -12px #00000040;
+          background: #FFFFFF;
+          padding: 20px;
+            width: 320px;
+        }
+      
+        .right .thirdContainer .thirdContainer-right {
+          box-shadow: 0px 25px 50px -12px #00000040;
+          background: linear-gradient(180deg, #16A34A 0%, #15803D 100%);
+          padding: 20px;
+          color: #fff;
+            width: 320px;
+      
+        }
+      
+      
+        .right .thirdContainer .thirdContainer-left h1 {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      
+        .right .thirdContainer .thirdContainer-left .roundedBtnssd {
+          margin-top: 15px;
+          justify-content: space-between;
+          padding-right: 10px;
+        }
+      
+        .right .thirdContainer .thirdContainer-left .roundedBtnssd p:first-child {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          background: #FECACA;
+          padding: 5px;
+      
+        }
+      
+        .right .thirdContainer .thirdContainer-left .roundedBtnssd p:last-child {
+          background: #FED7AA;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 5px;
+        }
+      
+      
+      
+        .right .thirdContainer .thirdContainer-left .userComments {
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      
+        .right .thirdContainer .thirdContainer-left div:nth-child(3) {
+        margin-top: 20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #4B5563;
+        }
+      
+          .right .thirdContainer .thirdContainer-left div:nth-child(4) {
+        margin-top: 20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #4B5563;
+        }
+      
+        .right .thirdContainer .thirdContainer-left .userComments div:first-child svg {
+          justify-content: space-between;
+          color: #9CA3AF;
+          width: 16px;
+          height: 16px;
+        }
+      
+        /* 3rd container right div */
+      
+        .right .thirdContainer .thirdContainer-right h1 {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      
+        .right .thirdContainer .thirdContainer-right .roundedBtnssd {
+          margin-top: 15px;
+          justify-content: space-between;
+          padding-right: 10px;
+        }
+      
+        .right .thirdContainer .thirdContainer-right .roundedBtnssd p:first-child {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          background: #BBF7D0;
+          padding: 5px;
+          color: #000;
+      
+        }
+      
+        .right .thirdContainer .thirdContainer-right .roundedBtnssd p:last-child {
+          background: #FED7AA;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 5px;
+          color: #000;
+          background: #BBF7D0;
+        }
+      
+        .right .thirdContainer .thirdContainer-right div:nth-child(5) {
+       
+          font-family: Inter;
+          font-size: 50px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      
+        .right .thirdContainer .thirdContainer-right div:nth-child(3) {
+            margin-top: 20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #fff;
+        }
+      
+          .right .thirdContainer .thirdContainer-right div:nth-child(3) {
+            margin-top: 20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #fff;
+        }
+      
+        .right .thirdContainer .thirdContainer-right .userComments div:first-child svg {
+          justify-content: space-between;
+          color: #9CA3AF;
+          width: 16px;
+          height: 16px;
+        }
+      </style>
+      
+
+
+</head>
+<body>
+
+
+
+  
+<div id="main">
+
+    <div class="dflex">
+  
+      <div class="left">
+  
+        <div class="logo">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+            </svg>
+          </div>
+          <h1> Bell Labs </h1>
+        </div>
+  
+        <nav>
+  
+          <div class="list">
+  
+            <div>
+  
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
+            </div>
+            <p> Dashboard </p>
+  
+          </div>
+  
+  
+          <div class="list">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+              </svg>
+            </div>
+            <p> Projects </p>
+          </div>
+  
+  
+          <div class="list">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+            </div>
+            <p> Tasks </p>
+          </div>
+  
+  
+          <div class="list">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+              </svg>
+            </div>
+            <p> Services </p>
+          </div>
+  
+          <div class="list">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </div>
+            <p> Chat </p>
+          </div>
+  
+        </nav>
+  
+  
+      </div>
+  
+      <div class="right">
+  
+        <header>
+  
+          <div> <input placeholder="Search..." /> </div>
+          <div>
+            <p>Friday, 5 June </p>
+          </div>
+  
+          <div class="dflex ">
+            <div>List View</div>
+            <div>Grid View</div>
+          </div>
+  
+        </header>
+  
+        <section class="secondContainer">
+  
+          <div class="first">
+  
+            <div class="leftBox">
+              <h2> Latest Tasks </h2>
+              <p> A list of all the users in your account including their name, title, email and
+                role. </p>
+  
+            </div>
+  
+            <div class="rightBox">
+              <button>Add more people </button>
+            </div>
+  
+          </div>
+  
+          <div class="second">
+  
+            <table id="customers">
+              <tr>
+  
+                <th> <input type="checkbox"  /> Name</th>
+                <th>Title</th>
+                <th>Role</th>
+                <th> </th>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  />  John Smith</td>
+                <td>Back-end Developer</td>
+                <td>Member</td>
+                <td>Edit</td>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  />  Jane Doe</td>
+                <td>Full-stack Developer</td>
+                <td>Admin</td>
+                <td>Edit</td>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  /> Bob Johnson </td>
+                <td>UI Designer</td>
+                <td>Member</td>
+                <td>Edit</td>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  /> Sarah Lee </td>
+                <td>Front-end Developer</td>
+                <td>Admin</td>
+                <td>Edit</td>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  />Tom Brown</td>
+                <td>Back-end Developer</td>
+                <td>Member</td>
+                <td>Edit</td>
+              </tr>
+  
+              <tr>
+  
+                <td> <input type="checkbox"  />Emily Davis</td>
+                <td>Full-stack Developer</td>
+                <td>Admin</td>
+                <td>Edit</td>
+              </tr>
+  
+  
+            </table>
+          </div>
+  
+        </section>
+  
+  
+  
+        <section class="thirdContainer">
+  
+          <div class="thirdContainer-left">
+            <h1> Projects in progress </h1>
+  
+            <div class="dflex roundedBtnssd ">
+              <p> Deployment in progress </p>
+              <p>Build Failed </p>
+            </div>
+  
+            <div >
+              <p> Improve code quality </p>
+       
+            </div>
+  
+            <div> 
+                     <p> Raised by Manu Arora, 2 hours ago </p>
+               </div>
+  
+            <div class="dflex userComments">
+  
+              <div class="dflex">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+  </svg>
+  
+                </span>
+                <p>17 comments </p>
+  
+              </div>
+  
+  
+              <div class="dflex">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  
+                </span>
+                <p>17 comments </p>
+  
+              </div>
+  
+  
+            </div>
+  
+  
+  
+          </div>
+  
+  
+          <div class="thirdContainer-right">
+            <h1>Projects Completed </h1>
+  
+            <div class="dflex roundedBtnssd ">
+              <p> Deployment in progress </p>
+              <p>Build passing </p>
+            </div>
+  
+            <div>
+              <p> Deploy hotfix </p>
+              <p> Raised by Manu Arora, 17 hours ago </p>
+            </div>
+  
+            <div class="dflex userComments">
+  
+              <div class="dflex">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+  </svg>
+  
+                </span>
+                <p>12 comments </p>
+  
+              </div>
+  
+  
+              <div class="dflex">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  
+                </span>
+                <p>2 files modified </p>
+  
+              </div>
+  
+  
+            </div>
+  
+  
+  
+          </div>
+  
+  
+        </section>
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  
+  </div>
+
+
+
+</body>
+</html>
